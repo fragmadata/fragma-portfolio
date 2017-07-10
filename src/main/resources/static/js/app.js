@@ -203,6 +203,22 @@ projectDescriptionContent["DataHub"] ={
     "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
 };
 
+var projectSolutionScreens = {};
+
+projectSolutionScreens["Predicting Network Alarms"] = 3;
+projectSolutionScreens["Music Recommendation Engine"] = 3;
+projectSolutionScreens["Text Analytics"] = 3;
+projectSolutionScreens["Click Stream Analytics"] = 3;
+projectSolutionScreens["Time series segmentation"] = 3;
+projectSolutionScreens["NSB Prospect Mart"] = 3;
+projectSolutionScreens["DataHub"] = 3;
+projectSolutionScreens["Intelligent NLP Search"] = 3;
+projectSolutionScreens["Geo Fencing"] = 3;
+projectSolutionScreens["HDInsights Migration"] = 3;
+projectSolutionScreens["Spend Analysis Cube in SSAS and PowerBI"] = 2;
+projectSolutionScreens["Text Classification"] = 3;
+projectSolutionScreens["Fraud Detection"] = 2;
+
 $(document).ready(function() {
     console.log("Before Rendering projects list");
     renderProjectsList();
@@ -210,7 +226,7 @@ $(document).ready(function() {
 
 function renderProjectsList() {
     console.log("Rendering projects list");
-    var projectTable = new ProjectTable(components, projects, projectComponentMap, verticals, projectVerticalMap, projectDescriptionContent)
+    var projectTable = new ProjectTable(components, projects, projectComponentMap, verticals, projectVerticalMap, projectDescriptionContent, projectSolutionScreens)
     ko.applyBindings(projectTable);
     window.addEventListener('popstate', function(event) {
         console.log("Poping state");
@@ -223,7 +239,7 @@ function renderProjectsList() {
     });
 }
 
-function ProjectTable(components, projects, projectComponentMap, verticals, projectVerticalMap,projectDescriptionContent) {
+function ProjectTable(components, projects, projectComponentMap, verticals, projectVerticalMap,projectDescriptionContent,projectSolutionScreens) {
     var self = this;
     self.components = ko.observableArray(Array.from(components));
     self.projects = ko.observableArray(projects);
@@ -235,6 +251,7 @@ function ProjectTable(components, projects, projectComponentMap, verticals, proj
     self.chosenVerticals = ko.observableArray(Array.from(verticals));
     self.projectVerticalMap = projectVerticalMap;
     self.projectDescriptionContent = projectDescriptionContent;
+    self.projectSolutionScreens = projectSolutionScreens;
 
     self.projectHasComponent = function(project, component) {
         if(projectComponentMap[project][component]) {
