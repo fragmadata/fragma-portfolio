@@ -137,9 +137,7 @@
                     <img class="img-responsive" src="images/noc.jpg" alt="" />
 
                     <h2 data-bind="text: project"></h2>
-
                 </div>
-                <h2 class="text-center" data-bind="text: project"></h2>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -148,14 +146,21 @@
             </div>
             <div class="row">
                 <div class="col-md-5">
+
                 </div>
-                <div data-bind="css: { underscore: $root.selectedState()=='Desc' };" style="text-align:right" class="col-md-1">
-                    <a data-bind="click: function(data, event) { $root.onDescription(data); }">Description</a>
+                <div class="col-md-2" style="text-align=center">
+                    <span data-bind="css: { underscore: $root.selectedState()=='Desc' };" style="text-align:right">
+                        <a data-bind="click: function(data, event) { $root.onDescription(data); }">Description</a>
+                    </span>
+                    <span>
+                        &nbsp;
+                    </span>
+                    <span data-bind="css: { underscore: $root.selectedState()=='Soln' };" style="text-align:left">
+                        <a data-bind="click: function(data, event) { $root.onSolution(data);}">Solution</a>
+                    </span>
                 </div>
-                <div data-bind="css: { underscore: $root.selectedState()=='Soln' };" style="text-align:left" class="col-md-1">
-                    <a data-bind="click: function(data, event) { $root.onSolution(data);}">Solution</a>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
+
                 </div>
             </div>
             <div class="row">
@@ -164,10 +169,38 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div data-bind="visible:$root.selectedState()=='Desc'" class="tile peach">
-                        <h3 class="title">Description</h3>
-                        <p>Description will go in here</p>
+                <div class="col-md-12">
+                    <div data-bind="visible:$root.selectedState()=='Desc'" class="tile aqua">
+                        <table class="table">
+                            <tr>
+                                <td class="highlightingRow" style="width:10%">
+                                    <b>Description</b>
+                                </td>
+                                <td>
+                                    <i>What was the customers Business need/challenge</i><br/>
+                                    Build  a data analytics platform to onboard Partner data. The platform should support ingestion of data coming from partners in unstructured/semi-structured format,  cleansing using various business rules, data deduping,  data enrichment and a qulaity scoring engine. This is prospect customers data and will be used to roll out campaigns.<br/><br/>
+                                    <i>What solutions has Fragma delivered to drive the consumption of  Azure</i><br/>
+                                    Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights to build end-to-end platform
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="highlightingRow">
+                                    <b>Outcome/Impact</b>
+                                </td>
+                                <td>
+                                    <i>What impact did Fragma drive, how did  the solution/offering address the customers business  needs ?</i><br/>
+                                    Fragma building an end-to-end data pipeline to onboard new Partners.  This initiative is driven by newly formed BIU  called NSR[Network Service Business] with in Bajaj. The BIU is responsible to drive its own P&L and has a target to achieve around 500Cr+ of business through Parrtners.  Fragma is helping NSB io buiid  a sclable platform on Azure Data Platform(Paa) from scratch.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="highlightingRow">
+                                    <b>Technical Solution</b>
+                                </td>
+                                <td>
+                                    Azure Data Factory is being used for entire platform orchestration, HDInsights is being used to process unstructureed data and apply business rules to cleanse data.  The cleanse data is loaded to Azure EDW to perform deuping and quality scoring. The downstram campaign applications will be integrated with EDW to rollout campaigns.
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
