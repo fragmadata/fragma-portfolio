@@ -178,9 +178,9 @@
                                 </td>
                                 <td>
                                     <i>What was the customers Business need/challenge</i><br/>
-                                    Build  a data analytics platform to onboard Partner data. The platform should support ingestion of data coming from partners in unstructured/semi-structured format,  cleansing using various business rules, data deduping,  data enrichment and a qulaity scoring engine. This is prospect customers data and will be used to roll out campaigns.<br/><br/>
+                                    <span data-bind="text:$root.projectDescriptionContent[project]['businessChallenge']"></span><br/><br/>
                                     <i>What solutions has Fragma delivered to drive the consumption of  Azure</i><br/>
-                                    Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights to build end-to-end platform
+                                    <span data-bind="text:$root.projectDescriptionContent[project]['fragmaDelivery']"></span>
                                 </td>
                             </tr>
                             <tr>
@@ -189,7 +189,7 @@
                                 </td>
                                 <td>
                                     <i>What impact did Fragma drive, how did  the solution/offering address the customers business  needs ?</i><br/>
-                                    Fragma building an end-to-end data pipeline to onboard new Partners.  This initiative is driven by newly formed BIU  called NSR[Network Service Business] with in Bajaj. The BIU is responsible to drive its own P&L and has a target to achieve around 500Cr+ of business through Parrtners.  Fragma is helping NSB io buiid  a sclable platform on Azure Data Platform(Paa) from scratch.
+                                    <span data-bind="text:$root.projectDescriptionContent[project]['outcome']"></span>
                                 </td>
                             </tr>
                             <tr>
@@ -197,7 +197,7 @@
                                     <b>Technical Solution</b>
                                 </td>
                                 <td>
-                                    Azure Data Factory is being used for entire platform orchestration, HDInsights is being used to process unstructureed data and apply business rules to cleanse data.  The cleanse data is loaded to Azure EDW to perform deuping and quality scoring. The downstram campaign applications will be integrated with EDW to rollout campaigns.
+                                    <span data-bind="text:$root.projectDescriptionContent[project]['techSolution']"></span>
                                 </td>
                             </tr>
                         </table>
