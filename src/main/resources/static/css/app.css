@@ -29,7 +29,11 @@ body {
 
 .listing td, .listing th {
     border: 1px solid #ddd;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+a {
+    cursor:pointer;
 }
 
 .listing .thead td {
