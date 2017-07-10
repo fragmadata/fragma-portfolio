@@ -96,22 +96,22 @@
         <div id="projectsListing" class="col-md-10">
             <table class="listing table">
                 <tr class="thead firstrow">
-                    <td rowspan="2">#</td>
-                    <td style="width:230px;" rowspan="2">Client-Project Name</td>
-                    <td rowspan="2">Vertical</td>
+                    <td>#</td>
+                    <td style="width:230px;">Project Name</td>
+                    <td>Vertical</td>
                 <!-- ko foreach: components -->
                     <td>
                         <div data-bind="text: $data"></div>
                     </td>
                 <!-- /ko -->
                 </tr>
-                <tr class="thead secondrow">
+                <!--<tr class="thead secondrow">-->
                     <!-- ko foreach: components -->
-                    <td style="width:20px;vertical-align:top">
-                        <div style="height:40px;width:30px;margin:auto;"><img class="img-responsive" data-bind="attr: { src: 'images/'+$data + '.png'}"><img></div>
-                    </td>
+                    <!--<td style="width:20px;vertical-align:top">-->
+                        <!--<div style="height:40px;width:30px;margin:auto;"><img class="img-responsive" data-bind="attr: { src: 'images/'+$data + '.png'}"><img></div>-->
+                    <!--</td>-->
                     <!-- /ko -->
-                </tr>
+                <!--</tr>-->
                 <!--ko foreach: { data: projects, as: 'project' } -->
                 <tr data-bind="if: $root.renderProject(project)">
                     <td data-bind="text: $index()+1"></td>
