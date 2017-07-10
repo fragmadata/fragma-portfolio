@@ -13,19 +13,19 @@ var components = [
 ];
 
 var projects = [
-        "TCL-Predicting Network Alarms",
-        "Gaana- Music Recommendation Engine",
-        "Times Of India- Text Analytics",
-        "Bajaj Finserv-Click Stream Analytics",
-        "Bajaj Finserv-Time series segmentation",
-        "Bajaj Finserv-NSB Prospect Mart",
-        "Tavant Systems-DataHub",
-        "SBI-Intelligent NLP Search",
-        "ECFY-Geo Fencing",
-        "GEP-HDInsights Migration",
-        "GEP-Spend Analysis Cube in SSAS and PowerBI",
-        "GEP- Text Classification",
-        "Essar - Fraud Detection"
+        "Predicting Network Alarms",
+        "Music Recommendation Engine",
+        "Text Analytics",
+        "Click Stream Analytics",
+        "Time series segmentation",
+        "NSB Prospect Mart",
+        "DataHub",
+        "Intelligent NLP Search",
+        "Geo Fencing",
+        "HDInsights Migration",
+        "Spend Analysis Cube in SSAS and PowerBI",
+        "Text Classification",
+        "Fraud Detection"
 ];
 
 var verticals = [
@@ -42,86 +42,86 @@ var verticals = [
 var projectComponentMap = {};
 var projectVerticalMap = {};
 
-projectVerticalMap["TCL-Predicting Network Alarms"] = "Networks And Communications";
-projectVerticalMap["Gaana- Music Recommendation Engine"] = "Media And Entertainment";
-projectVerticalMap["Times Of India- Text Analytics"] = "Media And Entertainment";
-projectVerticalMap["Bajaj Finserv-Click Stream Analytics"] = "BFSI";
-projectVerticalMap["Bajaj Finserv-Time series segmentation"] = "BFSI";
-projectVerticalMap["Bajaj Finserv-NSB Prospect Mart"] = "BFSI";
-projectVerticalMap["Tavant Systems-DataHub"] = "Software Solutions";
-projectVerticalMap["SBI-Intelligent NLP Search"] = "BFSI";
-projectVerticalMap["ECFY-Geo Fencing"] = "Transportation";
-projectVerticalMap["GEP-HDInsights Migration"] = "Procurement and Supply Chain";
-projectVerticalMap["GEP-Spend Analysis Cube in SSAS and PowerBI"] = "Procurement and Supply Chain";
-projectVerticalMap["GEP- Text Classification"] = "Procurement and Supply Chain";
-projectVerticalMap["Essar - Fraud Detection"] = "Oil and Gas";
+projectVerticalMap["Predicting Network Alarms"] = "Networks And Communications";
+projectVerticalMap["Music Recommendation Engine"] = "Media And Entertainment";
+projectVerticalMap["Text Analytics"] = "Media And Entertainment";
+projectVerticalMap["Click Stream Analytics"] = "BFSI";
+projectVerticalMap["Time series segmentation"] = "BFSI";
+projectVerticalMap["NSB Prospect Mart"] = "BFSI";
+projectVerticalMap["DataHub"] = "Software Solutions";
+projectVerticalMap["Intelligent NLP Search"] = "BFSI";
+projectVerticalMap["Geo Fencing"] = "Transportation";
+projectVerticalMap["HDInsights Migration"] = "Procurement and Supply Chain";
+projectVerticalMap["Spend Analysis Cube in SSAS and PowerBI"] = "Procurement and Supply Chain";
+projectVerticalMap[" Text Classification"] = "Procurement and Supply Chain";
+projectVerticalMap["Fraud Detection"] = "Oil and Gas";
 
-projectComponentMap["TCL-Predicting Network Alarms"] = {};
-projectComponentMap["TCL-Predicting Network Alarms"]["Data Factory"]=true;
-projectComponentMap["TCL-Predicting Network Alarms"]["HDInsights"]=true;
-projectComponentMap["TCL-Predicting Network Alarms"]["Event and IOT Hub"]=true;
-projectComponentMap["TCL-Predicting Network Alarms"]["Document DB"]=true;
-projectComponentMap["TCL-Predicting Network Alarms"]["R Server"]=true;
-projectComponentMap["TCL-Predicting Network Alarms"]["Stream Analytics"]=true;
-projectComponentMap["TCL-Predicting Network Alarms"]["Power BI"]=true;
+projectComponentMap["Predicting Network Alarms"] = {};
+projectComponentMap["Predicting Network Alarms"]["Data Factory"]=true;
+projectComponentMap["Predicting Network Alarms"]["HDInsights"]=true;
+projectComponentMap["Predicting Network Alarms"]["Event and IOT Hub"]=true;
+projectComponentMap["Predicting Network Alarms"]["Document DB"]=true;
+projectComponentMap["Predicting Network Alarms"]["R Server"]=true;
+projectComponentMap["Predicting Network Alarms"]["Stream Analytics"]=true;
+projectComponentMap["Predicting Network Alarms"]["Power BI"]=true;
 
-projectComponentMap["Gaana- Music Recommendation Engine"] = {};
-projectComponentMap["Gaana- Music Recommendation Engine"]["Document DB"]=true;
-projectComponentMap["Gaana- Music Recommendation Engine"]["R Server"]=true;
-projectComponentMap["Gaana- Music Recommendation Engine"]["Azure ML"]=true;
+projectComponentMap["Music Recommendation Engine"] = {};
+projectComponentMap["Music Recommendation Engine"]["Document DB"]=true;
+projectComponentMap["Music Recommendation Engine"]["R Server"]=true;
+projectComponentMap["Music Recommendation Engine"]["Azure ML"]=true;
 
-projectComponentMap["Times Of India- Text Analytics"] = {};
-projectComponentMap["Times Of India- Text Analytics"]["R Server"]=true;
-projectComponentMap["Times Of India- Text Analytics"]["Azure ML"]=true;
-projectComponentMap["Times Of India- Text Analytics"]["Power BI"]=true;
-projectComponentMap["Times Of India- Text Analytics"]["Azure Search"]=true;
+projectComponentMap["Text Analytics"] = {};
+projectComponentMap["Text Analytics"]["R Server"]=true;
+projectComponentMap["Text Analytics"]["Azure ML"]=true;
+projectComponentMap["Text Analytics"]["Power BI"]=true;
+projectComponentMap["Text Analytics"]["Azure Search"]=true;
 
-projectComponentMap["Bajaj Finserv-Click Stream Analytics"] = {};
-projectComponentMap["Bajaj Finserv-Click Stream Analytics"]["HDInsights"]=true;
-projectComponentMap["Bajaj Finserv-Click Stream Analytics"]["Event and IOT Hub"]=true;
-projectComponentMap["Bajaj Finserv-Click Stream Analytics"]["Stream Analytics"]=true;
+projectComponentMap["Click Stream Analytics"] = {};
+projectComponentMap["Click Stream Analytics"]["HDInsights"]=true;
+projectComponentMap["Click Stream Analytics"]["Event and IOT Hub"]=true;
+projectComponentMap["Click Stream Analytics"]["Stream Analytics"]=true;
 
-projectComponentMap["Bajaj Finserv-Time series segmentation"] = {};
-projectComponentMap["Bajaj Finserv-Time series segmentation"]["Data Factory"]=true;
-projectComponentMap["Bajaj Finserv-Time series segmentation"]["Azure Data Warehouse"]=true;
-projectComponentMap["Bajaj Finserv-Time series segmentation"]["HDInsights"]=true;
+projectComponentMap["Time series segmentation"] = {};
+projectComponentMap["Time series segmentation"]["Data Factory"]=true;
+projectComponentMap["Time series segmentation"]["Azure Data Warehouse"]=true;
+projectComponentMap["Time series segmentation"]["HDInsights"]=true;
 
-projectComponentMap["Bajaj Finserv-NSB Prospect Mart"] = {};
-projectComponentMap["Bajaj Finserv-NSB Prospect Mart"]["Data Factory"]=true;
-projectComponentMap["Bajaj Finserv-NSB Prospect Mart"]["Azure Data Warehouse"]=true;
-projectComponentMap["Bajaj Finserv-NSB Prospect Mart"]["HDInsights"]=true;
+projectComponentMap["NSB Prospect Mart"] = {};
+projectComponentMap["NSB Prospect Mart"]["Data Factory"]=true;
+projectComponentMap["NSB Prospect Mart"]["Azure Data Warehouse"]=true;
+projectComponentMap["NSB Prospect Mart"]["HDInsights"]=true;
 
-projectComponentMap["Tavant Systems-DataHub"] = {};
-projectComponentMap["Tavant Systems-DataHub"]["Data Factory"]=true;
-projectComponentMap["Tavant Systems-DataHub"]["Azure Data Warehouse"]=true;
-projectComponentMap["Tavant Systems-DataHub"]["HDInsights"]=true;
+projectComponentMap["DataHub"] = {};
+projectComponentMap["DataHub"]["Data Factory"]=true;
+projectComponentMap["DataHub"]["Azure Data Warehouse"]=true;
+projectComponentMap["DataHub"]["HDInsights"]=true;
 
-projectComponentMap["SBI-Intelligent NLP Search"] = {};
-projectComponentMap["SBI-Intelligent NLP Search"]["Document DB"]=true;
-projectComponentMap["SBI-Intelligent NLP Search"]["R Server"]=true;
-projectComponentMap["SBI-Intelligent NLP Search"]["Azure Search"]=true;
+projectComponentMap["Intelligent NLP Search"] = {};
+projectComponentMap["Intelligent NLP Search"]["Document DB"]=true;
+projectComponentMap["Intelligent NLP Search"]["R Server"]=true;
+projectComponentMap["Intelligent NLP Search"]["Azure Search"]=true;
 
-projectComponentMap["ECFY-Geo Fencing"] = {};
-projectComponentMap["ECFY-Geo Fencing"]["Event and IOT Hub"]=true;
-projectComponentMap["ECFY-Geo Fencing"]["Stream Analytics"]=true;
+projectComponentMap["Geo Fencing"] = {};
+projectComponentMap["Geo Fencing"]["Event and IOT Hub"]=true;
+projectComponentMap["Geo Fencing"]["Stream Analytics"]=true;
 
-projectComponentMap["GEP-HDInsights Migration"] = {};
-projectComponentMap["GEP-HDInsights Migration"]["HDInsights"]=true;
-projectComponentMap["GEP-HDInsights Migration"]["R Server"]=true;
+projectComponentMap["HDInsights Migration"] = {};
+projectComponentMap["HDInsights Migration"]["HDInsights"]=true;
+projectComponentMap["HDInsights Migration"]["R Server"]=true;
 
-projectComponentMap["GEP-Spend Analysis Cube in SSAS and PowerBI"] = {};
-projectComponentMap["GEP-Spend Analysis Cube in SSAS and PowerBI"]["Azure Data Warehouse"]=true;
-projectComponentMap["GEP-Spend Analysis Cube in SSAS and PowerBI"]["Power BI"]=true;
-projectComponentMap["GEP-Spend Analysis Cube in SSAS and PowerBI"]["Azure SSAS"]=true;
+projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"] = {};
+projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"]["Azure Data Warehouse"]=true;
+projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"]["Power BI"]=true;
+projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"]["Azure SSAS"]=true;
 
-projectComponentMap["GEP- Text Classification"] = {};
-projectComponentMap["GEP- Text Classification"]["HDInsights"]=true;
-projectComponentMap["GEP- Text Classification"]["R Server"]=true;
+projectComponentMap["Text Classification"] = {};
+projectComponentMap["Text Classification"]["HDInsights"]=true;
+projectComponentMap["Text Classification"]["R Server"]=true;
 
-projectComponentMap["Essar - Fraud Detection"] = {};
-projectComponentMap["Essar - Fraud Detection"]["Azure ML"]=true;
-projectComponentMap["Essar - Fraud Detection"]["R Server"]=true;
-projectComponentMap["Essar - Fraud Detection"]["Power BI"]=true;
+projectComponentMap["Fraud Detection"] = {};
+projectComponentMap["Fraud Detection"]["Azure ML"]=true;
+projectComponentMap["Fraud Detection"]["R Server"]=true;
+projectComponentMap["Fraud Detection"]["Power BI"]=true;
 
 $(document).ready(function() {
     console.log("Before Rendering projects list");
