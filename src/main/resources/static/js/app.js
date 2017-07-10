@@ -164,7 +164,9 @@ function ProjectTable(components, projects, projectComponentMap, verticals, proj
     };
 
     self.renderProject = function(project) {
-        return self.chosenComponents().some(function(element) { return projectComponentMap[project][element];});
+        return self.chosenComponents().some(function(component) { return projectComponentMap[project][component];})
+
+        && self.chosenVerticals().some(function(vertical){return projectVerticalMap[project]==vertical});
     }
 
     self.projectHasComponentTdCss = function(project, component) {
