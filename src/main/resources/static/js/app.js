@@ -155,10 +155,10 @@ projectDescriptionContent["Time series segmentation"] = {
         "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
 };
 projectDescriptionContent["NSB Prospect Mart"] = {
-        "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
-        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis",
-        "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
-        "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
+        "businessChallenge":"Build  a data analytics platform to onboard Partner data. The platform supports ingestion of data coming from multiple partners in unstructured/semi-structured format,  cleansing using various business rules, data deduping,  data enrichment and a quality scoring engine. This is prospect customers data and will be used to roll out campaigns.",
+        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights to build end-to-end platform.",
+        "outcome":"Fragma built an end-to-end data pipeline to onboard new Partners.  This initiative is driven by newly formed BIU  called NSB[Network Service Business]. The BIU is responsible to drive its own P&L and has a target to achieve around 500Cr+ of business through Parrtners.  Fragma is helping NSB io buiid  a sclable platform on Azure Data Platform(Paa) from scratch. ",
+        "techSolution":"Azure Data  Factory  is being used for entire platform orchestration, HDInsights is being used to process unstructured data and apply business rules to cleanse data.  The cleansed data is loaded to Azure EDW to perform deduping and quality scoring. The downstream campaign applications will be integrated with EDW to rollout campaigns."
 };
 projectDescriptionContent["Intelligent NLP Search"] = {
         "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
@@ -173,10 +173,10 @@ projectDescriptionContent["Geo Fencing"] = {
         "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
 };
 projectDescriptionContent["HDInsights Migration"] = {
-        "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
-        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis",
-        "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
-        "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
+        "businessChallenge":"Client had their Data Science Classification Project – deployed in on premise infra. Current deployment is using multiple components in single machine and facing scalability challenges. Project objective was to build a horizontally scalable architecture.",
+        "fragmaDelivery":"Fragma Data provided a new scalable technical architecture using Azure Data Platform components – R, HDInsights for Mahout, Elastic Search and Node.js running in VMs.",
+        "outcome":"It was as-is migration but partner brought in the required architecture skills to build a very scalable architecture. With new architecture both HDInsight and Elastic Search can be scaled out by adding more nodes and address growing business demand.",
+        "techSolution":"Existing solution had R and Mahout running on single Machine. Partner used HDInsight to move R and Mahout workloads to HDInsight. Elastic Search was setup in its 2 node cluster and made the architecture scalable. This also sets the platform to move to Azure Search in futture."
 };
 projectDescriptionContent["Spend Analysis Cube in SSAS and PowerBI"] = {
         "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
