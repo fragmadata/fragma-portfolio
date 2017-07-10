@@ -53,7 +53,7 @@ projectVerticalMap["Intelligent NLP Search"] = "BFSI";
 projectVerticalMap["Geo Fencing"] = "Transportation";
 projectVerticalMap["HDInsights Migration"] = "Procurement and Supply Chain";
 projectVerticalMap["Spend Analysis Cube in SSAS and PowerBI"] = "Procurement and Supply Chain";
-projectVerticalMap[" Text Classification"] = "Procurement and Supply Chain";
+projectVerticalMap["Text Classification"] = "Procurement and Supply Chain";
 projectVerticalMap["Fraud Detection"] = "Oil and Gas";
 
 projectComponentMap["Predicting Network Alarms"] = {};

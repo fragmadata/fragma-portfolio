@@ -3,6 +3,10 @@
  align-items: center;
 }
 
+.navbar {
+    min-height: 53px;
+}
+
 .navbar-brand>img {
  padding: 0px 0px;
  height: 100%;
@@ -11,7 +15,7 @@
 
 body {
     min-height:0px;
-    padding-top:52px;
+    padding-top:50px;
 }
 
 /*.container {
