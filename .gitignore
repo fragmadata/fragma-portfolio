@@ -1,0 +1,7 @@
+*.iml
+target*
+.idea
+.idea/*
+dot/*
+sourcetorun*
+.DS_Store

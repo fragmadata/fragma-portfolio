@@ -1,0 +1,139 @@
+.navbar-brand {
+ display: flex;
+ align-items: center;
+}
+
+.navbar-brand>img {
+ padding: 0px 0px;
+ height: 100%;
+ width: auto;
+}
+
+body {
+    min-height:0px;
+    padding-top:52px;
+}
+
+/*.container {
+    margin-left: 0px;
+    margin-right: 0px;
+} */
+
+.listing {
+    border: 1px solid #ddd;
+}
+
+.listing td, .listing th {
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.listing .thead td {
+    background-color: #C2D6E9;
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.listing .secondrow td {
+    border-top: none !important;
+}
+
+.listing .firstrow td {
+    border-bottom: none !important;
+}
+
+.project div {
+    font-weight: bold;
+}
+
+.datafactory {
+    background-image: url(../images/datafactory.png);
+    background-size:     contain;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.usedcomponent  {
+    background-color: #57EE82;
+}
+
+td.usedcomponent {
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.usedcomponent {
+    vertical-align: middle;
+}
+
+.textOverImage h2 {
+   position: absolute;
+   top: 200px;
+   left: 100px;
+   width: 100%;
+   color: white;
+}
+
+.tile {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.tile.purple, .tile.blue, .tile.red, .tile.orange, .tile.green, tile.aqua, tile.peach {
+  color: #fff;
+  font-size: 10px;
+}
+.tile.purple {
+  background: #5133AB;
+}
+.tile.aqua {
+  background: #4EC5C1;
+}
+.tile.peach {
+  background: #D8ABD2;
+}
+.tile.purple:hover {
+  background: #3e2784;
+}
+.tile.red {
+  background: #AC193D;
+}
+.tile.red:hover {
+  background: #7f132d;
+}
+.tile.green {
+  background: #00A600;
+}
+.tile.green:hover {
+  background: #007300;
+}
+.tile.blue {
+  background: #2672EC;
+}
+.tile.blue:hover {
+  background: #125acd;
+}
+.tile.orange {
+  background: #DC572E;
+}
+.tile.orange:hover {
+  background: #b8431f;
+}
+.projectbanner {
+  background: rgb(12,42,67);
+}
+.underscore {
+    border-bottom:solid;
+}
+
+
+
+
+
+
