@@ -137,10 +137,10 @@ projectDescriptionContent["Music Recommendation Engine"] = {
         "techSolution":"The songs dump was stored on blob, R was used to extract upto 60 feature and were then stored in Azure SQL. Based on user profiles and Genre of songs, a recommendation prototype was built using Cognitive Services Recommendation Engine"
 };
 projectDescriptionContent["Text Analytics"] = {
-        "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
-        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis",
-        "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
-        "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
+        "businessChallenge":"Client is a Print Media Giant, it is the third-largest newspaper in India by circulation. They want to build a Real Time Search Engine on their everyday news articles, to search the the articles by topic/entity of interest. Also, tag the article by sentiment to analyze the overall sentiment on different pages in paper.",
+        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Search for real time search, and Azure Cognitive service text analytics for sentiment analysis",
+        "outcome":"Client was able to search their historical news articles data by topic/keyword with sbsecond latency to retrieve all the relavent articles",
+        "techSolution":"Azure Search was used to store and build indices on unstructured news article data. Azure congitive services text analytics was used to predict the sentiment of article, the intense of sentiment was determined using the predicted sentiment score."
 };
 projectDescriptionContent["Click Stream Analytics"] = {
         "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
