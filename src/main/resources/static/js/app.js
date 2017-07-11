@@ -125,10 +125,10 @@ projectComponentMap["Fraud Detection"]["Power BI"]=true;
 
 projectDescriptionContent = {};
 projectDescriptionContent["Predicting Network Alarms"] = {
-        "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
-        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis",
-        "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
-        "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
+        "businessChallenge":"Client is leading Data Center and Network Communications service provider. Thousands of network alarms gets generated every minute, only some of them are direct alerts and others are sequence alarms. The business problem was to understand pattern of alarm sequence  and predict potential Alarms. The predicted alarm would be based on sequence of alarms ",
+        "fragmaDelivery":"We used data mining algorithms to find patterns in the historical alarm data. Used Rev R and AzureML for building Association Rules using Apriori Asscociation rule mining. Real time network prediction system was developed using Azure Data Platform components – Azure Data Factory, Azure Document DB, Event Hub, Stream Analytics and Power BI.",
+        "outcome":"Predicting next upcoming alarms helped business team to Prioritize the high impact alarms per region/segment to avoid Business Impact. Technical support team is using predictive Monitoring for proactive maintainence.",
+        "techSolution":"Rev R was used to build assication rules and DocumentDB was used to store these rules as JSON's for retriving in low latency(<15ms) time. Rules Matching engine reads the generated alarms and publishes predicted alarms to event hub. Azure Stream reads them from event hub, removes dupicates and pushlish them to PowerBI for real time monitoring."
 };
 projectDescriptionContent["Music Recommendation Engine"] = {
         "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
