@@ -149,10 +149,10 @@ projectDescriptionContent["Click Stream Analytics"] = {
         "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
 };
 projectDescriptionContent["Time series segmentation"] = {
-        "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
-        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis",
-        "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
-        "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
+        "businessChallenge":"Client is India's largest lending firm. Client had their month end customer segmentation processing solution built using SAS. SAS was not able to scale with lareg volumes of data((>500GB ) crunching and was running for more than 30days for each run, which was as a blocker for Business teams.",
+        "fragmaDelivery":"Fragma Data provided a new scalable architecture using Azure Data Platform components – Spark over HDInsight for ETL, Spark ML for Classsification, Data Factory for orchestration, Polybase for copy and Spark MLLib for building the customer segmentation model using the entire customer data."
+        "outcome":"Earlier processing was taking more than 30days, in spark it has come down to about less than 14Hrs. This solution sets the benchmark to move all  their SAS on-premise solutions to Azure HDInsights. This has massive impact across business teams, as they couldn’t run this process in SAS at all, this is an excellent case study for all other customers who are using SAS.",
+        "techSolution":"Polybase for copy to/from Azure EDW, Spark over HDInsight for ETL, Spark ML for Classification, Data Factory for orchestration. This biggest learning for client was to realize power of HDInsights for building Big Data Solutions."
 };
 projectDescriptionContent["NSB Prospect Mart"] = {
         "businessChallenge":"Build  a data analytics platform to onboard Partner data. The platform supports ingestion of data coming from multiple partners in unstructured/semi-structured format,  cleansing using various business rules, data deduping,  data enrichment and a quality scoring engine. This is prospect customers data and will be used to roll out campaigns.",
@@ -161,10 +161,10 @@ projectDescriptionContent["NSB Prospect Mart"] = {
         "techSolution":"Azure Data  Factory  is being used for entire platform orchestration, HDInsights is being used to process unstructured data and apply business rules to cleanse data.  The cleansed data is loaded to Azure EDW to perform deduping and quality scoring. The downstream campaign applications will be integrated with EDW to rollout campaigns."
 };
 projectDescriptionContent["Intelligent NLP Search"] = {
-        "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
-        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis",
-        "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
-        "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
+        "businessChallenge":"Client is India's largest public sector bank. They generate thousand of e-circular documents for communicating notifications/news internally. They wante to build a closed domain Knowledge based Question Answer system on policy documents. The application should able to retrieve exact answer from the corpus and also give relevant list of documents.",
+        "fragmaDelivery":"Fragma Data has built an intelligent search engine using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis.",
+        "outcome":"Helped client to retrieve relavant answers from their corpus of documents. The solution also has feed back mechanism to collect and incorporate feed back from users which makes it a much more accurate over period of time.",
+        "techSolution":"This solution has three major component, 1. Question classifcation, Information Retrieval and Answer extraction. We used Azure searchengine for real time document retirval, used NLP for identifying intent of the question and used DocumentDB to store user queries and feedback."
 };
 projectDescriptionContent["Geo Fencing"] = {
         "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
