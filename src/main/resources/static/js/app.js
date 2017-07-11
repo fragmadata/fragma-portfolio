@@ -150,7 +150,7 @@ projectDescriptionContent["Click Stream Analytics"] = {
 };
 projectDescriptionContent["Time series segmentation"] = {
         "businessChallenge":"Client is India's largest lending firm. Client had their month end customer segmentation processing solution built using SAS. SAS was not able to scale with lareg volumes of data((>500GB ) crunching and was running for more than 30days for each run, which was as a blocker for Business teams.",
-        "fragmaDelivery":"Fragma Data provided a new scalable architecture using Azure Data Platform components – Spark over HDInsight for ETL, Spark ML for Classsification, Data Factory for orchestration, Polybase for copy and Spark MLLib for building the customer segmentation model using the entire customer data."
+        "fragmaDelivery":"Fragma Data provided a new scalable architecture using Azure Data Platform components – Spark over HDInsight for ETL, Spark ML for Classsification, Data Factory for orchestration, Polybase for copy and Spark MLLib for building the customer segmentation model using the entire customer data.",
         "outcome":"Earlier processing was taking more than 30days, in spark it has come down to about less than 14Hrs. This solution sets the benchmark to move all  their SAS on-premise solutions to Azure HDInsights. This has massive impact across business teams, as they couldn’t run this process in SAS at all, this is an excellent case study for all other customers who are using SAS.",
         "techSolution":"Polybase for copy to/from Azure EDW, Spark over HDInsight for ETL, Spark ML for Classification, Data Factory for orchestration. This biggest learning for client was to realize power of HDInsights for building Big Data Solutions."
 };
