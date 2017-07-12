@@ -219,8 +219,8 @@
 
                             <!-- Wrapper for slides -->
                             <div data-bind="foreach: new Array($root.projectSolutionScreens[project])" class="carousel-inner">
-                                <div class="item" data-bind="css: { active: $index() == 0 };">
-                                    <img data-bind="attr: { src: 'images/'+project + '/'+($index()+1)+'.png'}"/>
+                                <div class="item" style="margin:auto" data-bind="css: { active: $index() == 0 };">
+                                    <img style="width:100%" data-bind="attr: { src: 'images/'+project + '/'+($index()+1)+'.png'}"/>
                                 </div>
                             </div>
 

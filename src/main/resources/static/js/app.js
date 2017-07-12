@@ -207,7 +207,7 @@ projectDescriptionContent["DataHub"] ={
 var projectSolutionScreens = {};
 
 projectSolutionScreens["Predicting Network Alarms"] = 3;
-projectSolutionScreens["Music Recommendation Engine"] = 3;
+projectSolutionScreens["Music Recommendation Engine"] = 4;
 projectSolutionScreens["Text Analytics"] = 3;
 projectSolutionScreens["Click Stream Analytics"] = 3;
 projectSolutionScreens["Time series segmentation"] = 3;
