@@ -143,10 +143,10 @@ projectDescriptionContent["Text Analytics"] = {
         "techSolution":"Azure Search was used to store and build indices on unstructured news article data. Azure congitive services text analytics was used to predict the sentiment of article, the intense of sentiment was determined using the predicted sentiment score."
 };
 projectDescriptionContent["Click Stream Analytics"] = {
-        "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
-        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis",
-        "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
-        "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
+        "businessChallenge":"Client is India's largest lending firm. Requirement was to have a unified system to analyze clickstream data from all of their public websites. Although open source clickstream tools were good for capturing metrics, due to high volumes real time analytics and adhoc exploration over all data was taking a lot of time.",
+        "fragmaDelivery":"Fragma Data provided a scalable architecture for the analytics using Azure Data Platform components – Event Hub to stream the clickstream data, HD Insights for Big Data and Analytics over all the data and Azure Stream Analytics for Realtime Analytics.",
+        "outcome":"Helped client in dealing with problem due to scale, by introducing Azure Data PaaS components. Integrated the existing clickstream data collection tool with Event Hub for propagating the data for analytics.",
+        "techSolution":"A plugin was developed to publish the clickstream data to Event Hub from existing clickstream tool called PIWIK. Stream analytics was used to perform real time reporting over windowed data. For adhoc analysis, Hadoop was used."
 };
 projectDescriptionContent["Time series segmentation"] = {
         "businessChallenge":"Client is India's largest lending firm. Client had their month end customer segmentation processing solution built using SAS. SAS was not able to scale with lareg volumes of data((>500GB ) crunching and was running for more than 30days for each run, which was as a blocker for Business teams.",
@@ -179,10 +179,10 @@ projectDescriptionContent["HDInsights Migration"] = {
         "techSolution":"Existing solution had R and Mahout running on single Machine. Partner used HDInsight to move R and Mahout workloads to HDInsight. Elastic Search was setup in its 2 node cluster and made the architecture scalable. This also sets the platform to move to Azure Search in futture."
 };
 projectDescriptionContent["Spend Analysis Cube in SSAS and PowerBI"] = {
-        "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
-        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis",
-        "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
-        "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
+        "businessChallenge":"Client is an MNC, provides software to enterprise procurement at Fortune 500 companies worldwide. Theit analytics product is built on Microstrategy for doing in-memory data crunching. Currently, they are facing a challenge in terms of scalability and mainatainance of existing system, so they were looking for building a low latency OLAP solution to do analysis in memory in realtime on PaaS.",
+        "fragmaDelivery":"We have used the latest OLAP analytics offering on Azure, SSAS to build in-memory cubes and PowerBI for realtime visualization.",
+        "outcome":" The solution on Azure helped solve is two major challenges, <br/> 1. Scalability: As SSAS is a PaaS offering, we can scale up/down as required. <br/> 2. Maiantanence: No overhead of infra/admin  ",
+        "techSolution":" Used Azure EDW to store the transaction data. Azure SSAS has a direct connect to pull data from EDW, after data load we have built business specified Measures on Cubes. PowerBI has a direct connector with SSAS to populate dahboards with data in realtime"
 };
 projectDescriptionContent["Text Classification"] = {
         "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
