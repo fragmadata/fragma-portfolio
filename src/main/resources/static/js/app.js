@@ -13,7 +13,7 @@ var components = [
 ];
 
 var projects = [
-        "Predicting Network Alarms",
+        "Predictive Maintenance",
         "Music Recommendation Engine",
         "Text Analytics",
         "Click Stream Analytics",
@@ -43,7 +43,7 @@ var verticals = [
 var projectComponentMap = {};
 var projectVerticalMap = {};
 
-projectVerticalMap["Predicting Network Alarms"] = "Networks And Communications";
+projectVerticalMap["Predictive Maintenance"] = "Networks And Communications";
 projectVerticalMap["Music Recommendation Engine"] = "Media And Entertainment";
 projectVerticalMap["Text Analytics"] = "Media And Entertainment";
 projectVerticalMap["Click Stream Analytics"] = "BFSI";
@@ -57,14 +57,14 @@ projectVerticalMap["Spend Analysis Cube in SSAS and PowerBI"] = "IT";//"Procurem
 projectVerticalMap["Text Classification"] = "IT";//"Procurement and Supply Chain";
 projectVerticalMap["Fraud Detection"] = "Oil and Gas";
 
-projectComponentMap["Predicting Network Alarms"] = {};
-projectComponentMap["Predicting Network Alarms"]["Data Factory"]=true;
-projectComponentMap["Predicting Network Alarms"]["HDInsights"]=true;
-projectComponentMap["Predicting Network Alarms"]["Event Hub"]=true;
-projectComponentMap["Predicting Network Alarms"]["Document DB"]=true;
-projectComponentMap["Predicting Network Alarms"]["R Server"]=true;
-projectComponentMap["Predicting Network Alarms"]["Stream Analytics"]=true;
-projectComponentMap["Predicting Network Alarms"]["Power BI"]=true;
+projectComponentMap["Predictive Maintenance"] = {};
+projectComponentMap["Predictive Maintenance"]["Data Factory"]=true;
+projectComponentMap["Predictive Maintenance"]["HDInsights"]=true;
+projectComponentMap["Predictive Maintenance"]["Event Hub"]=true;
+projectComponentMap["Predictive Maintenance"]["Document DB"]=true;
+projectComponentMap["Predictive Maintenance"]["R Server"]=true;
+projectComponentMap["Predictive Maintenance"]["Stream Analytics"]=true;
+projectComponentMap["Predictive Maintenance"]["Power BI"]=true;
 
 projectComponentMap["Music Recommendation Engine"] = {};
 projectComponentMap["Music Recommendation Engine"]["Document DB"]=true;
@@ -125,7 +125,7 @@ projectComponentMap["Fraud Detection"]["R Server"]=true;
 projectComponentMap["Fraud Detection"]["Power BI"]=true;
 
 projectDescriptionContent = {};
-projectDescriptionContent["Predicting Network Alarms"] = {
+projectDescriptionContent["Predictive Maintenance"] = {
         "businessChallenge":"Client is leading Data Center and Network Communications service provider. Thousands of network alarms gets generated every minute, only some of them are direct alerts and others are sequence alarms. The business problem was to understand pattern of alarm sequence  and predict potential Alarms. The predicted alarm would be based on sequence of alarms ",
         "fragmaDelivery":"We used data mining algorithms to find patterns in the historical alarm data. Used Rev R and AzureML for building Association Rules using Apriori Asscociation rule mining. Real time network prediction system was developed using Azure Data Platform components – Azure Data Factory, Azure Document DB, Event Hub, Stream Analytics and Power BI.",
         "outcome":"Predicting next upcoming alarms helped business team to Prioritize the high impact alarms per region/segment to avoid Business Impact. Technical support team is using predictive Monitoring for proactive maintainence.",
@@ -206,18 +206,18 @@ projectDescriptionContent["DataHub"] ={
 
 var projectSolutionScreens = {};
 
-projectSolutionScreens["Predicting Network Alarms"] = 3;
+projectSolutionScreens["Predictive Maintenance"] = 5;
 projectSolutionScreens["Music Recommendation Engine"] = 4;
-projectSolutionScreens["Text Analytics"] = 3;
+projectSolutionScreens["Text Analytics"] = 2;
 projectSolutionScreens["Click Stream Analytics"] = 3;
 projectSolutionScreens["Time series segmentation"] = 3;
 projectSolutionScreens["NSB Prospect Mart"] = 3;
 projectSolutionScreens["DataHub"] = 3;
 projectSolutionScreens["Intelligent NLP Search"] = 3;
 projectSolutionScreens["Geo Fencing"] = 3;
-projectSolutionScreens["HDInsights Migration"] = 3;
+projectSolutionScreens["HDInsights Migration"] = 2;
 projectSolutionScreens["Spend Analysis Cube in SSAS and PowerBI"] = 2;
-projectSolutionScreens["Text Classification"] = 3;
+projectSolutionScreens["Text Classification"] = 4;
 projectSolutionScreens["Fraud Detection"] = 2;
 
 $(document).ready(function() {
