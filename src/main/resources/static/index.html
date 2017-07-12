@@ -42,8 +42,9 @@
         <img style="display:inline;width=50px;height=50px" class="img-responsive" src="images/fds.png"/>
     </span>
     &nbsp;
-    <span style="position:absolute;left:35%;top:25%;display:inline;font-size:17px;font-weight:bold;">
-        Fragma Data Systems - Advanced Analytics
+    <span style="position:absolute;left:40%;display:inline;font-size:17px;font-weight:bold;text-align:center">
+        Fragma Data Systems<br/>
+        Advanced Analytics on Azure
     </span>
     <div data-bind="visible: !$root.noProjectSelected()" style="display:block;text-align:right;vertical-align:middle;margin-top:-35px;padding-right:10px">
         <a data-bind="click: function(data, event) {$root.goHome();}">
@@ -74,7 +75,7 @@
        <div class="row">
        <div class="col-md-2">
            <div class="tile aqua">
-               <span class="underscore">Components</span><br/>
+               <span><b>Components</b></span><br/><br/>
                <!-- ko foreach: components -->
                <input type="checkbox" data-bind="checkedValue: $data, checked: $root.chosenComponents" />
                &nbsp;
@@ -84,7 +85,7 @@
                <span><a style="font-size:12px" data-bind="click: function(data, event) {$root.chooseAllComponents();}">Select All</a></span>&nbsp;|&nbsp;<span><a style="font-size:12px" data-bind="click: function(data, event) {$root.chooseNoComponents();}">Select None</a></span>
            </div>
            <div class="tile aqua">
-               <span class="underscore">Verticals</span><br/>
+               <span><b>Verticals</b></span><br/><br/>
                <!-- ko foreach: verticals -->
                <input type="checkbox" data-bind="checkedValue: $data, checked: $root.chosenVerticals" />
                &nbsp;

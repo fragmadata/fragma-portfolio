@@ -2,7 +2,7 @@ var components = [
                 "Data Factory",
                 "Azure Data Warehouse",
                 "HDInsights",
-                "Event and IOT Hub",
+                "Event Hub",
                 "Document DB",
                 "R Server",
                 "Azure ML",
@@ -29,13 +29,14 @@ var projects = [
 ];
 
 var verticals = [
-    "Networks And Communications",
-    "Media And Entertainment",
     "BFSI",
-    "Software Solutions",
-    "Transportation",
-    "Procurement and Supply Chain",
-    "Oil and Gas"
+    "IT",
+    "ITES",
+    "Logistics",
+    "Oil and Gas",
+    "Networks And Communications",
+    "Media And Entertainment"
+//    "Procurement and Supply Chain",
 ];
 
 
@@ -48,18 +49,18 @@ projectVerticalMap["Text Analytics"] = "Media And Entertainment";
 projectVerticalMap["Click Stream Analytics"] = "BFSI";
 projectVerticalMap["Time series segmentation"] = "BFSI";
 projectVerticalMap["NSB Prospect Mart"] = "BFSI";
-projectVerticalMap["DataHub"] = "Software Solutions";
+projectVerticalMap["DataHub"] = "ITES";
 projectVerticalMap["Intelligent NLP Search"] = "BFSI";
-projectVerticalMap["Geo Fencing"] = "Transportation";
-projectVerticalMap["HDInsights Migration"] = "Procurement and Supply Chain";
-projectVerticalMap["Spend Analysis Cube in SSAS and PowerBI"] = "Procurement and Supply Chain";
-projectVerticalMap["Text Classification"] = "Procurement and Supply Chain";
+projectVerticalMap["Geo Fencing"] = "Logistics";
+projectVerticalMap["HDInsights Migration"] = "IT";//"Procurement and Supply Chain";
+projectVerticalMap["Spend Analysis Cube in SSAS and PowerBI"] = "IT";//"Procurement and Supply Chain";
+projectVerticalMap["Text Classification"] = "IT";//"Procurement and Supply Chain";
 projectVerticalMap["Fraud Detection"] = "Oil and Gas";
 
 projectComponentMap["Predicting Network Alarms"] = {};
 projectComponentMap["Predicting Network Alarms"]["Data Factory"]=true;
 projectComponentMap["Predicting Network Alarms"]["HDInsights"]=true;
-projectComponentMap["Predicting Network Alarms"]["Event and IOT Hub"]=true;
+projectComponentMap["Predicting Network Alarms"]["Event Hub"]=true;
 projectComponentMap["Predicting Network Alarms"]["Document DB"]=true;
 projectComponentMap["Predicting Network Alarms"]["R Server"]=true;
 projectComponentMap["Predicting Network Alarms"]["Stream Analytics"]=true;
@@ -78,7 +79,7 @@ projectComponentMap["Text Analytics"]["Azure Search"]=true;
 
 projectComponentMap["Click Stream Analytics"] = {};
 projectComponentMap["Click Stream Analytics"]["HDInsights"]=true;
-projectComponentMap["Click Stream Analytics"]["Event and IOT Hub"]=true;
+projectComponentMap["Click Stream Analytics"]["Event Hub"]=true;
 projectComponentMap["Click Stream Analytics"]["Stream Analytics"]=true;
 
 projectComponentMap["Time series segmentation"] = {};
@@ -102,7 +103,7 @@ projectComponentMap["Intelligent NLP Search"]["R Server"]=true;
 projectComponentMap["Intelligent NLP Search"]["Azure Search"]=true;
 
 projectComponentMap["Geo Fencing"] = {};
-projectComponentMap["Geo Fencing"]["Event and IOT Hub"]=true;
+projectComponentMap["Geo Fencing"]["Event Hub"]=true;
 projectComponentMap["Geo Fencing"]["Stream Analytics"]=true;
 
 projectComponentMap["HDInsights Migration"] = {};
