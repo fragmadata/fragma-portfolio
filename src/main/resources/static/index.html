@@ -75,7 +75,7 @@
        <div class="row">
        <div class="col-md-2">
            <div class="tile aqua">
-               <span><b>Components</b></span><br/><br/>
+               <span><b>Azure Components</b></span><br/><br/>
                <!-- ko foreach: components -->
                <input type="checkbox" data-bind="checkedValue: $data, checked: $root.chosenComponents" />
                &nbsp;
@@ -181,9 +181,9 @@
                                 </td>
                                 <td>
                                     <i><b>What was the customers Business Need/Challenge?</b></i><br/>
-                                    <span data-bind="text:$root.projectDescriptionContent[project]['businessChallenge']"></span><br/><br/>
+                                    <span data-bind="html:$root.projectDescriptionContent[project]['businessChallenge']"></span><br/><br/>
                                     <i><b>What solutions has Fragma delivered to drive the consumption of  Azure?</b></i><br/>
-                                    <span data-bind="text:$root.projectDescriptionContent[project]['fragmaDelivery']"></span>
+                                    <span data-bind="html:$root.projectDescriptionContent[project]['fragmaDelivery']"></span>
                                 </td>
                             </tr>
                             <tr>
@@ -192,7 +192,7 @@
                                 </td>
                                 <td>
                                     <i><b>What impact did Fragma drive, how did the solution/offering address the customers business  needs?</b></i><br/>
-                                    <span data-bind="text:$root.projectDescriptionContent[project]['outcome']"></span>
+                                    <span data-bind="html:$root.projectDescriptionContent[project]['outcome']"></span>
                                 </td>
                             </tr>
                             <tr>
@@ -200,7 +200,7 @@
                                     <b>Technical Solution</b>
                                 </td>
                                 <td>
-                                    <span data-bind="text:$root.projectDescriptionContent[project]['techSolution']"></span>
+                                    <span data-bind="html:$root.projectDescriptionContent[project]['techSolution']"></span>
                                 </td>
                             </tr>
                         </table>
