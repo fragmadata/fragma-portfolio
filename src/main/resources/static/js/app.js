@@ -192,10 +192,10 @@ projectDescriptionContent["Text Classification"] = {
         "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
 };
 projectDescriptionContent["Fraud Detection"] = {
-        "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
-        "fragmaDelivery":"Fragma Data provided a scalable architecture using Azure Data Platform components – Azure Data Factory, Azure EDW, and HD Insights for Big data and Analytcis",
-        "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
-        "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
+        "businessChallenge":"Client was rapidly expanding their outlet retail network and to increase sales at outlets, they launched a Loyalty program. The challenge was to identify use of the program to fraudulently gain benefits given out by the program.",
+        "fragmaDelivery":"Fragma Data provided anomaly detection solution to flag possible fraud. The anomaly detection uses advanced clustering algorithms for identification of outliers.",
+        "outcome":"Helped client to uncover outliers and in addition also highlighted multiple usage patterns of the fleet program.",
+        "techSolution":"Azure ML and R Server was used in implementing the clustering and outlier detection algorithms. The results were visualized in Power BI."
 };
 projectDescriptionContent["DataHub"] ={
     "businessChallenge":"Client was using oracle DB on premise for OLTP. They were looking for a on cloud solution for Data warehouse  and an anallytics platform",
