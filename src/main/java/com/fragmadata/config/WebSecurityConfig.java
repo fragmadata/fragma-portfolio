@@ -22,8 +22,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/bootstrap/**").permitAll()
                 .antMatchers("/css/**").permitAll()
                 .antMatchers("/fonts/**").permitAll()
-                .antMatchers("/images/**").permitAll()
-                .antMatchers("/js/**").permitAll()
+                .antMatchers("/images/fds.png").permitAll()
+                //.antMatchers("/js/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -44,8 +44,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             auth.inMemoryAuthentication() .withUser(credentials[0]).password(credentials[1]).roles("USER");
         }*/
         String[][] credentials = new String[][]{
-                {"fragma_demo" , "fragma_demo"},
-                {"fragma_user" , "fragma_user"}
+                {"demo" , "Passw0rd@123"},
+                {"fragma" , "fragmadata@123"}
         };
 
         for(int i=0;i<2;i++){
