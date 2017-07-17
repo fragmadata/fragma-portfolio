@@ -9,7 +9,8 @@ var components = [
                 "Stream Analytics",
                 "Power BI",
                 "Azure SSAS",
-                "Azure Search"
+                "Azure Search",
+                "OS"
 ];
 
 var projects = [

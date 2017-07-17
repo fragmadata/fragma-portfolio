@@ -1,0 +1,39 @@
+
+/*initial*/
+.fixed-footer{
+    position : fixed;
+    bottom : 0px;
+    left : 0px;
+    right :0px;
+    z-index:999;
+}
+
+.footer{
+    height:50px;
+    background:black;
+    border-color:#080808;
+    font-size:10px;
+    color:white;
+}
+.footer-head{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:13px;
+    color:white;
+}
+.footer .glyphicon{
+    color:white;
+}
+
+/*footer*/
+.footer:hover{
+    height : 95px;
+    font-size : 18px;
+}
+
+.footer:hover .footer-head{
+    font-size : 21px;
+    padding-bottom:5px;
+    /*border-bottom:solid;*/
+    margin-bottom:5px;
+    padding-left:0;
+}
