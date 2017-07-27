@@ -1,15 +1,15 @@
 var components = [
-                "Data Factory",
-                "Azure Data Warehouse",
-                "HDInsights",
-                "Event Hub",
-                "Document DB",
-                "R Server",
-                "Azure ML",
-                "Stream Analytics",
-                "Power BI",
-                "Azure SSAS",
-                "Azure Search"
+                "Hadoop",
+                "Apache Hive, Drill, Presto",
+                "Apache Kafka",
+                "MongoDB",
+                "R",
+                "ML",
+                "Apache Storm, Spark Streaming",
+                "Apache Superset",
+                "Apache Kylin",
+                "ElasticSearch",
+                "Airbnb Airflow"
 ];
 
 var projects = [
@@ -25,7 +25,8 @@ var projects = [
         "HDInsights Migration",
         "Spend Analysis Cube in SSAS and PowerBI",
         "Text Classification",
-        "Fraud Detection"
+        "Fraud Detection",
+        "Social Media Analytics"
 ];
 
 var verticals = [
@@ -56,73 +57,79 @@ projectVerticalMap["HDInsights Migration"] = "IT";//"Procurement and Supply Chai
 projectVerticalMap["Spend Analysis Cube in SSAS and PowerBI"] = "IT";//"Procurement and Supply Chain";
 projectVerticalMap["Text Classification"] = "IT";//"Procurement and Supply Chain";
 projectVerticalMap["Fraud Detection"] = "Oil and Gas";
+projectVerticalMap["Social Media Analytics"] = "IT";
 
 projectComponentMap["Predictive Maintenance"] = {};
-projectComponentMap["Predictive Maintenance"]["Data Factory"]=true;
-projectComponentMap["Predictive Maintenance"]["HDInsights"]=true;
-projectComponentMap["Predictive Maintenance"]["Event Hub"]=true;
-projectComponentMap["Predictive Maintenance"]["Document DB"]=true;
-projectComponentMap["Predictive Maintenance"]["R Server"]=true;
-projectComponentMap["Predictive Maintenance"]["Stream Analytics"]=true;
-projectComponentMap["Predictive Maintenance"]["Power BI"]=true;
+projectComponentMap["Predictive Maintenance"]["Airbnb Airflow"]=true;
+projectComponentMap["Predictive Maintenance"]["Hadoop"]=true;
+projectComponentMap["Predictive Maintenance"]["Apache Kafka"]=true;
+projectComponentMap["Predictive Maintenance"]["MongoDB"]=true;
+projectComponentMap["Predictive Maintenance"]["R"]=true;
+projectComponentMap["Predictive Maintenance"]["Apache Storm, Spark Streaming"]=true;
+projectComponentMap["Predictive Maintenance"]["Apache Superset"]=true;
 
 projectComponentMap["Music Recommendation Engine"] = {};
-projectComponentMap["Music Recommendation Engine"]["Document DB"]=true;
-projectComponentMap["Music Recommendation Engine"]["R Server"]=true;
-projectComponentMap["Music Recommendation Engine"]["Azure ML"]=true;
+projectComponentMap["Music Recommendation Engine"]["MongoDB"]=true;
+projectComponentMap["Music Recommendation Engine"]["R"]=true;
+projectComponentMap["Music Recommendation Engine"]["ML"]=true;
 
 projectComponentMap["Text Analytics"] = {};
-projectComponentMap["Text Analytics"]["R Server"]=true;
-projectComponentMap["Text Analytics"]["Azure ML"]=true;
-projectComponentMap["Text Analytics"]["Power BI"]=true;
-projectComponentMap["Text Analytics"]["Azure Search"]=true;
+projectComponentMap["Text Analytics"]["R"]=true;
+projectComponentMap["Text Analytics"]["ML"]=true;
+projectComponentMap["Text Analytics"]["Apache Superset"]=true;
+projectComponentMap["Text Analytics"]["ElasticSearch"]=true;
 
 projectComponentMap["Click Stream Analytics"] = {};
-projectComponentMap["Click Stream Analytics"]["HDInsights"]=true;
-projectComponentMap["Click Stream Analytics"]["Event Hub"]=true;
-projectComponentMap["Click Stream Analytics"]["Stream Analytics"]=true;
+projectComponentMap["Click Stream Analytics"]["Hadoop"]=true;
+projectComponentMap["Click Stream Analytics"]["Apache Kafka"]=true;
+projectComponentMap["Click Stream Analytics"]["Apache Storm, Spark Streaming"]=true;
 
 projectComponentMap["Time series segmentation"] = {};
-projectComponentMap["Time series segmentation"]["Data Factory"]=true;
-projectComponentMap["Time series segmentation"]["Azure Data Warehouse"]=true;
-projectComponentMap["Time series segmentation"]["HDInsights"]=true;
+projectComponentMap["Time series segmentation"]["Airbnb Airflow"]=true;
+projectComponentMap["Time series segmentation"]["Apache Hive, Drill, Presto"]=true;
+projectComponentMap["Time series segmentation"]["Hadoop"]=true;
 
 projectComponentMap["NSB Prospect Mart"] = {};
-projectComponentMap["NSB Prospect Mart"]["Data Factory"]=true;
-projectComponentMap["NSB Prospect Mart"]["Azure Data Warehouse"]=true;
-projectComponentMap["NSB Prospect Mart"]["HDInsights"]=true;
+projectComponentMap["NSB Prospect Mart"]["Airbnb Airflow"]=true;
+projectComponentMap["NSB Prospect Mart"]["Apache Hive, Drill, Presto"]=true;
+projectComponentMap["NSB Prospect Mart"]["Hadoop"]=true;
 
 projectComponentMap["DataHub"] = {};
-projectComponentMap["DataHub"]["Data Factory"]=true;
-projectComponentMap["DataHub"]["Azure Data Warehouse"]=true;
-projectComponentMap["DataHub"]["HDInsights"]=true;
+projectComponentMap["DataHub"]["Airbnb Airflow"]=true;
+projectComponentMap["DataHub"]["Apache Hive, Drill, Presto"]=true;
+projectComponentMap["DataHub"]["Hadoop"]=true;
 
 projectComponentMap["Intelligent NLP Search"] = {};
-projectComponentMap["Intelligent NLP Search"]["Document DB"]=true;
-projectComponentMap["Intelligent NLP Search"]["R Server"]=true;
-projectComponentMap["Intelligent NLP Search"]["Azure Search"]=true;
+projectComponentMap["Intelligent NLP Search"]["MongoDB"]=true;
+projectComponentMap["Intelligent NLP Search"]["R"]=true;
+projectComponentMap["Intelligent NLP Search"]["ElasticSearch"]=true;
 
 projectComponentMap["Geo Fencing"] = {};
-projectComponentMap["Geo Fencing"]["Event Hub"]=true;
-projectComponentMap["Geo Fencing"]["Stream Analytics"]=true;
+projectComponentMap["Geo Fencing"]["Apache Kafka"]=true;
+projectComponentMap["Geo Fencing"]["Apache Storm, Spark Streaming"]=true;
 
 projectComponentMap["HDInsights Migration"] = {};
-projectComponentMap["HDInsights Migration"]["HDInsights"]=true;
-projectComponentMap["HDInsights Migration"]["R Server"]=true;
+projectComponentMap["HDInsights Migration"]["Hadoop"]=true;
+projectComponentMap["HDInsights Migration"]["R"]=true;
 
 projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"] = {};
-projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"]["Azure Data Warehouse"]=true;
-projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"]["Power BI"]=true;
-projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"]["Azure SSAS"]=true;
+projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"]["Apache Hive, Drill, Presto"]=true;
+projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"]["Apache Superset"]=true;
+projectComponentMap["Spend Analysis Cube in SSAS and PowerBI"]["Apache Kylin"]=true;
 
 projectComponentMap["Text Classification"] = {};
-projectComponentMap["Text Classification"]["HDInsights"]=true;
-projectComponentMap["Text Classification"]["R Server"]=true;
+projectComponentMap["Text Classification"]["Hadoop"]=true;
+projectComponentMap["Text Classification"]["R"]=true;
 
 projectComponentMap["Fraud Detection"] = {};
-projectComponentMap["Fraud Detection"]["Azure ML"]=true;
-projectComponentMap["Fraud Detection"]["R Server"]=true;
-projectComponentMap["Fraud Detection"]["Power BI"]=true;
+projectComponentMap["Fraud Detection"]["ML"]=true;
+projectComponentMap["Fraud Detection"]["R"]=true;
+projectComponentMap["Fraud Detection"]["Apache Superset"]=true;
+
+projectComponentMap["Social Media Analytics"] = {};
+projectComponentMap["Social Media Analytics"]["Apache Kafka"]=true;
+projectComponentMap["Social Media Analytics"]["Apache Storm, Spark Streaming"]=true;
+projectComponentMap["Social Media Analytics"]["Apache Superset"]=true;
 
 projectDescriptionContent = {};
 projectDescriptionContent["Predictive Maintenance"] = {
@@ -203,6 +210,13 @@ projectDescriptionContent["DataHub"] ={
     "outcome":"Helped client to on-board Azure Data Platform PaaS. Gave them a complete end-to-end  architecture to build EDW and devleop analytics on top of ot.  Partner brought in the required architecture skills to build a very scalable architecture. Client realized the benifits of Azure PaaS and moving other onpremise Data applications also to PaaS.",
     "techSolution":"Azure Data  Factory was used to pull data from on premise to Blob, Used polybase to load from blob to DWaaS. HDInsights HIVE is being used for ETL.. The anallyst team is also building prototypes on Spark."
 };
+projectDescriptionContent["Social Media Analytics"] = {
+        "businessChallenge":"Client is a Multinational consumer goods company. They wanted to monitor customer sentiment about their service at different geo locations in real time and respond  to their queries on social media.",
+        "fragmaDelivery":"Fragma Data has built an real-time engine to pull and analyze tweets in real time using  – Twitter API, Kafka and PowerBI",
+        "outcome":" Built an exhaustive analytics dashboard to get insights from tweets. The dasboard can highlight for most negtive tweets to respond/react in realtime. This helps service their client in realtime.",
+        "techSolution":"This solution has three major components: <br/>1. Extraction of Tweets <br/> 2. Get sentiment score using NLP techniques nformation Retrieval and<br/>3. Build realtime dashboard. "
+};
+
 
 var projectSolutionScreens = {};
 
@@ -219,6 +233,7 @@ projectSolutionScreens["HDInsights Migration"] = 2;
 projectSolutionScreens["Spend Analysis Cube in SSAS and PowerBI"] = 2;
 projectSolutionScreens["Text Classification"] = 4;
 projectSolutionScreens["Fraud Detection"] = 2;
+projectSolutionScreens["Social Media Analytics"] = 2;
 
 $(document).ready(function() {
     console.log("Before Rendering projects list");
@@ -344,6 +359,7 @@ function ProjectTable(components, projects, projectComponentMap, verticals, proj
         self.onProjectSelection(self.selectedProject(), 'Soln')
     }
 }
+
 
 
 
