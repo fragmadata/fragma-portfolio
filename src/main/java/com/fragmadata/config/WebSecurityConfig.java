@@ -44,7 +44,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             auth.inMemoryAuthentication() .withUser(credentials[0]).password(credentials[1]).roles("USER");
         }*/
         String[][] credentials = new String[][]{
-                {"demo" , "Passw0rd@123"},
+                {"demo" , "P@ssw0rd@1234"},
                 {"fragma" , "fragmadata@123"},
 		{"fragmauser", "uaexdemo"}
         };
