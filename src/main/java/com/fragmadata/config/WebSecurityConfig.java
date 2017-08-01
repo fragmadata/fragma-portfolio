@@ -45,10 +45,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         }*/
         String[][] credentials = new String[][]{
                 {"demo" , "Passw0rd@123"},
-                {"fragma" , "fragmadata@123"}
+                {"fragma" , "fragmadata@123"},
         };
 
-        for(int i=0;i<2;i++){
+        for(int i=0;i<credentials.length;i++){
             auth.inMemoryAuthentication() .withUser(credentials[i][0]).password(credentials[i][1]).roles("USER");
         }
     }
