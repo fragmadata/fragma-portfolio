@@ -6,7 +6,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="">
+    <!--link rel="stylesheet" href=""-->
 
     <title>Fragma Data Systems</title>
 
@@ -37,34 +37,27 @@
 <body>
 
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="height:80px;background-color:#000">
     <span style="padding:10px;display:inline;">
-        <img style="display:inline;width=50px;height=50px" class="img-responsive" src="images/fds.png"/>
+        <img style="display:inline;height:50px" src="images/fds.png"/>
     </span>
     &nbsp;
-    <span style="position:absolute;left:40%;display:inline;font-size:17px;font-weight:bold;text-align:center">
+    <span style="position:absolute;left:40%;display:inline;font-size:20px;font-weight:bold;text-align:center;color:white;">
         Fragma Data Systems<br/>
         Advanced Analytics 
     </span>
-    <div data-bind="visible: !$root.noProjectSelected()" style="display:block;text-align:right;vertical-align:middle;margin-top:-35px;padding-right:10px">
+    <div style="display: inline;text-align:right;">
+        <img style="display:inline;height:80px" src="images/microsoftGold.jpg"/>
+    </div>
+    <div data-bind="visible: !$root.noProjectSelected()" style="display: inline;float: right;vertical-align: middle;padding-right: 10px;margin-top: 30px;">
         <a data-bind="click: function(data, event) {$root.goHome();}">
-        <span class="glyphicon glyphicon-home">
-
-        </span>
-            <span>
-                             Home
-        </span>
+            <span class="glyphicon glyphicon-home" style="font-size:20px"></span>
+            <span>Home</span>
         </a>
     </div>
-
-    <!--<div class="container">-->
-        <!--<div class="navbar-header">-->
-            <!--<a class="navbar-brand" href="#"><img class="img-responsive" src="images/fds.png"/>&nbsp;Fragma Data Systems</a>-->
-        <!--</div>-->
-    <!--</div>-->
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top:13px">
 
    <div data-bind="visible: $root.noProjectSelected()">
         <div class="row">
