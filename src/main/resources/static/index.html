@@ -37,19 +37,19 @@
 <body>
 
 <!-- Fixed navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top" style="height:80px;background-color:#000">
+<nav class="navbar navbar-default navbar-fixed-top">
     <span style="padding:10px;display:inline;">
         <img style="display:inline;height:50px" src="images/fds.png"/>
     </span>
     &nbsp;
-    <span style="position:absolute;left:40%;display:inline;font-size:20px;font-weight:bold;text-align:center;color:white;">
+    <span style="position:absolute;left:40%;display:inline;font-size:17px;font-weight:bold;text-align:center;">
         Fragma Data Systems<br/>
         Advanced Analytics 
     </span>
-    <div style="display: inline;text-align:right;">
+    <!--div style="display: inline;text-align:right;">
         <img style="display:inline;height:80px" src="images/microsoftGold.jpg"/>
-    </div>
-    <div data-bind="visible: !$root.noProjectSelected()" style="display: inline;float: right;vertical-align: middle;padding-right: 10px;margin-top: 30px;">
+    </div-->
+    <div data-bind="visible: !$root.noProjectSelected()" style="display: inline;float: right;vertical-align: middle;padding: 10px;">
         <a data-bind="click: function(data, event) {$root.goHome();}">
             <span class="glyphicon glyphicon-home" style="font-size:20px"></span>
             <span>Home</span>
@@ -57,7 +57,7 @@
     </div>
 </nav>
 
-<div class="container-fluid" style="margin-top:13px">
+<div class="container-fluid">
 
    <div data-bind="visible: $root.noProjectSelected()">
         <div class="row">
