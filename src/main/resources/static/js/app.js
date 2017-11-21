@@ -26,7 +26,9 @@ var projects = [
         "Spend Analysis Cube in SSAS and PowerBI",
         "Text Classification",
         "Fraud Detection",
-        "Social Media Analytics"
+        "Social Media Analytics",
+        "Big Data Deduplication Engine",
+        "Consolidated Data Source For Banking"
 ];
 
 var verticals = [
@@ -36,7 +38,7 @@ var verticals = [
     "Logistics",
     "Oil and Gas",
     "Networks And Communications",
-    "Media And Entertainment"
+    "Media And Entertainment",
 //    "Procurement and Supply Chain",
 ];
 
@@ -58,6 +60,8 @@ projectVerticalMap["Spend Analysis Cube in SSAS and PowerBI"] = "IT";//"Procurem
 projectVerticalMap["Text Classification"] = "IT";//"Procurement and Supply Chain";
 projectVerticalMap["Fraud Detection"] = "Oil and Gas";
 projectVerticalMap["Social Media Analytics"] = "IT";
+projectVerticalMap["Big Data Deduplication Engine"] = "BFSI";
+projectVerticalMap["Consolidated Data Source For Banking"] = "BFSI";
 
 projectComponentMap["Predictive Maintenance"] = {};
 projectComponentMap["Predictive Maintenance"]["Airbnb Airflow"]=true;
@@ -130,6 +134,15 @@ projectComponentMap["Social Media Analytics"] = {};
 projectComponentMap["Social Media Analytics"]["Apache Kafka"]=true;
 projectComponentMap["Social Media Analytics"]["Apache Storm, Spark Streaming"]=true;
 projectComponentMap["Social Media Analytics"]["Apache Superset"]=true;
+
+projectComponentMap["Big Data Deduplication Engine"]  = {};
+projectComponentMap["Big Data Deduplication Engine"]["Hadoop"]=true;
+projectComponentMap["Big Data Deduplication Engine"]["Apache Storm, Spark Streaming"]=true;
+projectComponentMap["Big Data Deduplication Engine"]["ML"]=true;
+
+projectComponentMap["Consolidated Data Source For Banking"]  = {};
+projectComponentMap["Consolidated Data Source For Banking"]["Hadoop"]=true;
+projectComponentMap["Consolidated Data Source For Banking"]["Apache Hive, Drill, Presto"]=true;
 
 projectDescriptionContent = {};
 projectDescriptionContent["Predictive Maintenance"] = {
@@ -217,6 +230,20 @@ projectDescriptionContent["Social Media Analytics"] = {
         "techSolution":"This solution has three major components: <br/>1. Extraction of Tweets <br/> 2. Get sentiment score using NLP techniques nformation Retrieval and<br/>3. Build realtime dashboard. "
 };
 
+projectDescriptionContent["Big Data Deduplication Engine"] = {
+    "businessChallenge" : "Automating due diligence processes for compliance across the different systems can be tedious as the records show variations in manifestation across systems.",
+    "fragmaDelivery":"Performing string deduplication to identify identical records(with variations and spell-changes) across systems, in a traditional Java program was showing high processing times. A string similarity look-up of just 100 input records daily over a search space of 1Million was taking more than 1.5 Hours. With Search-space expected to grow overtime this was a bottleneck in implementing the software robotics automation process for compliance due-diligence.",
+    "outcome":"Fragma’s implementation of fuzzy string matching utility using the distributed computing power of Hadoop brought down Deduplication run times by over 95%, reducing any overhead caused by dedplicaction issues for their due-diligence automation process. Nearly 500 input record look-ups now takes only 5 minutes or less across the same search space of 1 Million records, where earlier programs were taking more than a few hours for the same.",
+    "techSolution":"Fragma implemented a Record Deduplication capability using Hadoop’s distributed computing framework. Fragma Implemented a wide variety of fuzzy string similarity algorithms, to find the best match across systems in a time-efficient manner. The speed-up obtained using Hadoop’s map/reduce framework was several folds over traditional programs."
+};
+
+projectDescriptionContent["Consolidated Data Source For Banking"] = {
+    "businessChallenge":"Internal Audit teams need to routinely conduct investigations where they often need to compare records across different systems of the banks.",
+    "fragmaDelivery":"To perform cross departmental audit investigations is a difficult task in traditional settings, where one set of systems could use SQL server as back-end, another could use Oracle RDBMS, and some applications could even have file based back ends. Audit investigators find it difficult to run cross system queries to consolidate results.",
+    "outcome":"Fragma Built a consolidate data lake on the Hadoop cluster, that Allowed the Audit investigators to access and compare records from different sources in a uniform manner using SQL-style query interface",
+    "techSolution":"Fragma implemented data refresh pipelines that brought data into Hadoop from various disparate sources (SQL server,Oracle, File systems etc) and Created a consolidated data lake in Hadoop.Allowing the user to access records from different sources in a uniform manner using SQL-style query interface.<br/><br/>Various other capabilities were also implemented such as a scalable result file transfer utility that allowed users to query large data sets from Hadoop and export it onto their local machines."
+};
+
 
 var projectSolutionScreens = {};
 
@@ -234,6 +261,8 @@ projectSolutionScreens["Spend Analysis Cube in SSAS and PowerBI"] = 2;
 projectSolutionScreens["Text Classification"] = 4;
 projectSolutionScreens["Fraud Detection"] = 2;
 projectSolutionScreens["Social Media Analytics"] = 2;
+projectSolutionScreens["Big Data Deduplication Engine"] = 2;
+projectSolutionScreens["Consolidated Data Source For Banking"] = 1;
 
 $(document).ready(function() {
     console.log("Before Rendering projects list");
